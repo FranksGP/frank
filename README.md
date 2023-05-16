@@ -65,3 +65,88 @@ Inicio
 
    mostrar "Costo total de los pedidos: " + costoTotal
    Fin
+   
+   
+   # Codigo java
+   
+   import java.util.Scanner;
+import java.util.Scanner;
+ public class zapateria {
+     String talla;
+     String modelo;
+     double costo;
+     public zapateria{
+         this.talla = talla;
+         this.modelo = modelo;
+         this.costo = costo;
+     }
+     public String getTalla(){
+         return talla;
+     }
+     public void setTalla(String talla){
+         this.talla = talla;
+     }
+     public String getModelo(){
+         return modelo;
+     }
+     public void setModelo(String modelo){
+         this.modelo = modelos;
+     }
+     public double getCosto(){
+        return costo;
+        }
+     public void setCostos(double costo){
+         this.costo = costo;
+     }
+     public String toString() {
+         return "Talla: "+ talla +", modelo: "+ modelo + ", costo: $"+ costos;
+     }
+ }
+   import java.util.Scanner;
+import java.util.ArrayList;
+
+public class tienda
+{
+   public static void main(String[] args){
+       ArrayList<zapateria> pedidos = new ArrayList<zapateria>();
+        ArrayList<String> clientes = new ArrayList<String>();
+        ArrayList<String> identificaciones = new ArrayList<String>();
+       Scanner sc = new Scanner(System.in);
+       zapateria[] losZapatos = new zapateria[50];
+       int opciones = 0;
+       double costoTotal = 0;
+       do {
+          System.out.println("\nIngrese la talla del zapato:");
+            String talla = sc.nextLine();
+            System.out.println("Ingrese el modelo del zapato:");
+            String modelo = sc.nextLine();
+            System.out.println("Ingrese el costo del zapato:");
+            double costo = Double.parseDouble(sc.nextLine());
+            System.out.println("Ingrese el nombre del cliente:");
+            String nombre = sc.nextLine();
+            System.out.println("Ingrese la identificación del cliente:");
+            String identificacion = sc.nextLine();
+
+            pedidos.add(new losZapatos(talla, modelo, costo));
+            clientes.add(nombre);
+            identificaciones.add(identificacion);
+            costoTotal += costo;
+
+            System.out.println("\n¿Desea ingresar otro pedido?\n1. Sí\n2. No");
+            opciones = Integer.parseInt(sc.nextLine());
+        } while (opciones != 2); 
+       System.out.println("\nDatos almacenados:");
+
+        for (int i = 0; i < pedidos.size(); i++) {
+            System.out.println("\nPedido " + (i+1) + ":");
+            System.out.println(pedidos.get(i));
+            System.out.println("Nombre del cliente: " + clientes.get(i));
+            System.out.println("Identificación del cliente: " + identificaciones.get(i));
+        }
+
+        System.out.println("\nCosto total de los pedidos: $" + costoTotal);
+
+        sc.close();
+   }
+}
+   
