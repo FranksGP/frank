@@ -12,7 +12,7 @@ En su labor como programador de software ha sido elegido para el desarrollo de u
 ![WhatsApp Image 2023-05-16 at 9 33 03 AM](https://github.com/FranksGP/frank/assets/133733876/15013d7b-cdc8-49d7-ba6c-8d840db55f43)
 
 
-# Diagrama caso de uso
+# Diagrama caso de uso![diagrama de uso](https://github.com/FranksGP/frank/assets/133733876/4f161177-635e-41fe-a099-bdc717126fb)
 
 
 
